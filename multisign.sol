@@ -3,6 +3,8 @@ pragma solidity ^0.8.13;
 
 contract MultiSigWallet {
     event Deposit(address indexed sender, uint amount, uint balance);
+    // Events are a way for smart contracts to inform the outside world of any changes that occur during their execution.
+    // They play a critical role in the integration of smart contracts into real-world applications.
     event SubmitTransaction(
         address indexed owner,
         uint indexed txIndex,
